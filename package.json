@@ -1,0 +1,19 @@
+{
+  "name": "clinica-app",
+  "version": "1.0.0",
+  "description": "Gestión de clínica con Node.js y MySQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SERGIOOROZC/clinica-app.git"
+  },
+  "author": "Sergio Orozco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SERGIOOROZC/clinica-app/issues"
+  },
+  "homepage": "https://github.com/SERGIOOROZC/clinica-app#readme"
+}
