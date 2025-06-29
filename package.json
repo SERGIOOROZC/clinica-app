@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SERGIOOROZC/clinica-app/issues"
   },
-  "homepage": "https://github.com/SERGIOOROZC/clinica-app#readme"
+  "homepage": "https://github.com/SERGIOOROZC/clinica-app#readme",
+  "dependencies": {
+    "mysql2": "^3.14.1"
+  }
 }
