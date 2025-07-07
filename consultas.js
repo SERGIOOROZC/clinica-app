@@ -1,7 +1,6 @@
 // consultas.js a la base de datos
 
-
-const db = require('./db');
+import db from './db.js';  // notar el .js al final
 
 // 1. Listar todos los pacientes con sus teléfonos
 function getTelefonos() {
@@ -14,10 +13,9 @@ function getTelefonos() {
 }
 
 // 2.
-
-    function getTelefonoPaciente(numero_historial) {
-    const sql = `SELECT telefono FROM paciente WHERE nro_historial_clinico = ?`;
-    db.query(sql, [numero_historial], (err, results) => {
+function getTelefonoPaciente(numero_historial) {
+  const sql = `SELECT telefono FROM paciente WHERE nro_historial_clinico = ?`;
+  db.query(sql, [numero_historial], (err, results) => {
     if (err) {
       console.error('❌ Error en la consulta:', err.message);
       return;
@@ -31,8 +29,6 @@ function getTelefonos() {
     }
   });
 }
-
-
 
 // 3. Obtener médicos que atendieron a un paciente
 function getMedicosPaciente(numero_historial) {
@@ -55,9 +51,12 @@ function getMedicosPaciente(numero_historial) {
 }
 
 // Ejemplo de uso de las funciones 
- //getTelefonos();
- //getTelefonoPaciente(1884);
+ getTelefonos();
+// getTelefonoPaciente(1884);
 // getMedicosPaciente(123);
 
 // EJECUTO CON TERMINAL
 // node consultas.js
+
+
+// cambios echos -> const db = require('./db'); → import db from './db.js';
